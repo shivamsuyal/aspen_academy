@@ -5,12 +5,12 @@
       { "src": "/assets/**/*", "use": "@vercel/static" }
     ],
     "routes": [
-      { "src": "/(.*)", "dest": "/" },
       { "src": "/css/(.*)", "dest": "/assets/css/$1" },
       { "src": "/img/(.*)", "dest": "/assets/img/$1" },
       { "src": "/js/(.*)", "dest": "/assets/js/$1" },
       { "src": "/lib/(.*)", "dest": "/assets/lib/$1" },
-      { "src": "/mail/(.*)", "dest": "/assets/mail/$1" }
+      { "src": "/mail/(.*)", "dest": "/assets/mail/$1" },
+      { "src": "/(.*)", "dest": "/" }
     ]
 }
   
