@@ -1,0 +1,22 @@
+#leaves{
+    height: 100rem;
+    width: auto;
+}
+#about{
+    min-height: 50vh;
+    width: 90%;
+    // max-width: 800px;
+    margin: 0 auto;
+    // background-color: red;
+    background-color: white;
+    box-shadow: 0 0 20px 0 #929292;
+    border-radius: 15px;
+    transform: translateY(-3rem);
+    // padding: 1rem;
+    #about_text{
+        padding: 1rem 2rem;
+        margin-bottom: 1rem;
+        font-size: 1.1rem;
+        text-align: justify;
+    }
+}

@@ -1,14 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Handlee&family=Nunito+Sans:opsz,wght@6..12,400;6..12,500;6..12,600;6..12,700&display=swap');
 /******* Bootstrap Theming ********/
 
-$primary: #17a2b8;
-$secondary: #00394f;
+// $primary: #17a2b8;
+// $secondary: #00394f;
+$primary: #9abd63;
+$secondary: #056739;
 
 $theme-colors: (
     "primary": $primary,
     "secondary": $secondary,
 );
 
-$font-family-sans-serif: 'Nunito', sans-serif;
+$font-family-sans-serif: 'Nunito Sans', sans-serif;
 
 $headings-font-family: 'Handlee', cursive;
 

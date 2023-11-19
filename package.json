@@ -8,7 +8,7 @@
     "dev": "nodemon index.js",
     "start": "node index.js",
     "tsc": "tailwindcss",
-    "tsw": "tailwindcss -i assets/css/tailwind.css -o assets/css/style.css -w"
+    "tsw": "tailwindcss -i assets/css/tailwind.css -o assets/css/basestyle.css -w"
   },
   "keywords": [],
   "author": "",
