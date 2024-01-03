@@ -3,239 +3,183 @@
 
 <head>
     <%- include('../partials/htmlHeader')%>
-        <!-- CSS -->
-        <link rel="stylesheet" href="/css/index.css">
-        
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/index.css">
+
 </head>
 
 <body>
     <!-- Navbar Start -->
     <%- include('../partials/navBar')%>
-        <!-- Navbar End -->
+    <!-- Navbar End -->
 
 
-        <!-- Header Start -->
-        <div class="container-fluid bg-primary px-0 px-md-5 mb-5">
-            <div class="row align-items-center px-3">
-                <div class="col-lg-6 text-center text-lg-left">
-                    <h4 class="text-white mb-4 mt-5 mt-lg-0">Kids Learning Center</h4>
-                    <h1 class="display-3 font-weight-bold text-white">New Approach to Kids Education</h1>
-                    <p class="text-white mb-4" id="hero__text">Aspen Academy's holistic education fosters 
-                        21st-century skills, emotional intelligence, and technology integration to cultivate responsible global citizens equipped for an ever-changing world.</p>
-                    <a href="" class="btn btn-secondary mt-1 py-3 px-5">Learn More</a>
-                </div>
-                <div class="col-lg-6 text-center text-lg-right">
-                    <svg class="img-fluid my-5" width="865" height="685" viewBox="0 0 865 685" xmlns="http://www.w3.org/2000/svg">
-                        <defs>
-                            <clipPath id="user-space" clipPathUnits="userSpaceOnUse">
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M465.294 26.5641C546.829 31.2915 634.436 8.40874 704.869 41.2625C775.995 74.4389 811.85 139.499 839.444 201.086C865.357 258.923 872.198 320.734 857.05 380.917C842.43 439.002 798.472 486.868 755.333 535.261C707.595 588.813 670.57 657.237 592.093 678.145C513.222 699.157 428.801 667.412 351.598 642.823C280.373 620.138 221.466 583.499 165.178 542.172C102.505 496.158 25.2183 454.493 5.43015 388.668C-14.8313 321.269 25.7337 253.555 59.1655 189.527C93.7081 123.371 121.385 44.476 202.048 12.1091C282.124 -20.0222 375.756 21.3727 465.294 26.5641Z" fill="#C4C4C4">
-                                </path>
-                            </clipPath>
-                        </defs>
+    <!-- Header Start -->
+    <div class="container-fluid bg-primary px-0 px-md-5 mb-5">
+        <div class="row align-items-center px-3">
+            <div class="col-lg-6 text-center text-lg-left">
+                <h4 class="text-white mb-4 mt-5 mt-lg-0">Kids Learning Center</h4>
+                <h1 class="display-3 font-weight-bold text-white">New Approach to Kids Education</h1>
+                <p class="text-white mb-4" id="hero__text">Aspen Academy's holistic education fosters
+                    21st-century skills, emotional intelligence, and technology integration to cultivate responsible
+                    global citizens equipped for an ever-changing world.</p>
+                <a href="" class="btn btn-secondary mt-1 py-3 px-5">Learn More</a>
+            </div>
+            <div class="col-lg-6 text-center text-lg-right">
+                <svg class="img-fluid my-5" width="865" height="685" viewBox="0 0 865 685"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <clipPath id="user-space" clipPathUnits="userSpaceOnUse">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M465.294 26.5641C546.829 31.2915 634.436 8.40874 704.869 41.2625C775.995 74.4389 811.85 139.499 839.444 201.086C865.357 258.923 872.198 320.734 857.05 380.917C842.43 439.002 798.472 486.868 755.333 535.261C707.595 588.813 670.57 657.237 592.093 678.145C513.222 699.157 428.801 667.412 351.598 642.823C280.373 620.138 221.466 583.499 165.178 542.172C102.505 496.158 25.2183 454.493 5.43015 388.668C-14.8313 321.269 25.7337 253.555 59.1655 189.527C93.7081 123.371 121.385 44.476 202.048 12.1091C282.124 -20.0222 375.756 21.3727 465.294 26.5641Z"
+                                fill="#C4C4C4">
+                            </path>
+                        </clipPath>
+                    </defs>
 
-                        <image width="100%" height="100%" preserveAspectRatio="xMinYMin slice"
-                            xlink:href="/img/header2.jpg" style="transform: scaleX(-1) translateX(-100%);" clip-path="url(#user-space)" />
-                    </svg>
+                    <image width="100%" height="100%" preserveAspectRatio="xMinYMin slice" xlink:href="/img/header2.jpg"
+                        style="transform: scaleX(-1) translateX(-100%);" clip-path="url(#user-space)" />
+                </svg>
 
-                    <!-- <img class="img-fluid mt-5" src="img/header.png" alt=""> -->
-                </div>
+                <!-- <img class="img-fluid mt-5" src="img/header.png" alt=""> -->
             </div>
         </div>
-        <!-- Header End -->
+    </div>
+    <!-- Header End -->
 
 
-        <!-- Facilities Start -->
-        <div class="container-fluid pt-5">
-            <div class="container pb-3">
-                <div class="row" style="row-gap: 1rem;">
-                    <div class="col-lg-4 col-md-6 pb-1">
-                        <div class="d-flex h-full bg-light shadow-sm border-top rounded " style="padding: 20px 30px;">
-                            <img src="/img/teacher.svg" style="height: 2rem;width: auto;" alt="">
-                            <div class="pl-4">
-                                <h4>Trained Teachers</h4>
-                                <p class="m-0">Our school has an experienced, dedicated, and well qualified faculty ...</p>
-                                
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 pb-1">
-                        <div class="d-flex h-full bg-light shadow-sm border-top rounded " style="padding: 20px 30px;">
-                            <i class="flaticon-022-drum h1 font-weight-normal text-primary mb-3"></i>
-                            <div class="pl-4">
-                                
-                                <h4>Play Ground</h4>
-                                <p class="m-0">Safe, fun space for active play and social interaction ...</p>
-                                
-                                
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 pb-1">
-                        <div class="d-flex h-full bg-light shadow-sm border-top rounded " style="padding: 20px 30px;">
-                            <i class="flaticon-030-crayons h1 font-weight-normal text-primary mb-3"></i>
-                            <div class="pl-4">
-                                <h4>Arts and Crafts</h4>
-                                <p class="m-0">Inspiring creativity through various artistic activities ...</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 pb-1">
-                        <div class="d-flex h-full bg-light shadow-sm border-top rounded " style="padding: 20px 30px;">
-                            <img src="/img/smart.svg" style="height: 2.5rem;width: auto;" alt="">
-                            <div class="pl-4">
-                                <h4>Smart Classroom</h4>
-                                <p class="m-0">Immersive education in tech-enhanced, futuristic smart classrooms ...</p>
-                                
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 pb-1">
-                        <div class="d-flex h-full bg-light shadow-sm border-top rounded " style="padding: 20px 30px;">
-                            <img src="/img/cctv.svg" style="height: 2rem;width: auto;" alt="">
-                            <!-- <i class="flaticon-025-sandwich h1 font-weight-normal text-primary mb-3"></i> -->
-                            <div class="pl-4">
-                                <h4>CCTV Enabled Campus</h4>
-                                <p class="m-0">State-of-the-art CCTV surveillance for enhanced security ...</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 pb-1">
-                        <div class="d-flex h-full bg-light shadow-sm border-top rounded " style="padding: 20px 30px;">
-                            <i class="flaticon-047-backpack h1 font-weight-normal text-primary mb-3"></i>
-                            <div class="pl-4">
-                                <h4>Experiential Learning</h4>
-                                <p class="m-0">Exciting journeys complementing classroom learning ...</p>
-                            </div>
+    <!-- Facilities Start -->
+    <div class="container-fluid pt-5">
+        <div class="container pb-3">
+            <div class="row" style="row-gap: 1rem;">
+                <div class="col-lg-4 col-md-6 pb-1">
+                    <div class="d-flex h-full bg-light shadow-sm border-top rounded " style="padding: 20px 30px;">
+                        <img src="/img/teacher.svg" style="height: 2rem;width: auto;" alt="">
+                        <div class="pl-4">
+                            <h4>Trained Teachers</h4>
+                            <p class="m-0">Our school has an experienced, dedicated, and well qualified faculty ...</p>
+
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-        <!-- Facilities Start -->
+                <div class="col-lg-4 col-md-6 pb-1">
+                    <div class="d-flex h-full bg-light shadow-sm border-top rounded " style="padding: 20px 30px;">
+                        <i class="flaticon-022-drum h1 font-weight-normal text-primary mb-3"></i>
+                        <div class="pl-4">
+
+                            <h4>Play Ground</h4>
+                            <p class="m-0">Safe, fun space for active play and social interaction ...</p>
 
 
-        <!-- About Start -->
-        <div class="container-fluid py-5">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-5">
-                        <img class="img-fluid rounded mb-5 mb-lg-0" src="img/about-1.jpg" alt="">
-                    </div>
-                    <div class="col-lg-7">
-                        <p class="section-title pr-5"><span class="pr-2">Learn About Us</span></p>
-                        <h1 class="mb-4">Best School For Your Kids</h1>
-                        <p>At Aspen Academy, our vision is to nurture resilient and adaptable leaders who will shape the
-                            future with their critical thinking, creativity, and compassion, through an education rooted
-                            in 21st century skills and experiential learning.
-                        </p>
-                        <div class="row pt-2 pb-4">
-                            <div class="col-6 col-md-4">
-                                <img class="img-fluid rounded" src="img/about-2.jpg" alt="">
-                            </div>
-                            <div class="col-6 col-md-8">
-                                <ul class="list-inline m-0">
-                                    <li class="py-2 border-top border-bottom">
-                                        <i class="fa fa-check text-primary mr-3"></i>Language skills
-                                    </li>
-                                    <li class="py-2 border-bottom">
-                                        <i class="fa fa-check text-primary mr-3"></i>Fine motor skills
-                                    </li>
-                                    <li class="py-2 border-bottom">
-                                        <i class="fa fa-check text-primary mr-3"></i>Social skills
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <a href="" class="btn btn-primary mt-2 py-2 px-4">Learn More</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- About End -->
-
-
-
-
-        <!-- Carousel Start -->
-        <div class="container-fluid py-5">
-            <div class="container">
-                <div class="owl-carousel">
-                    <img src="https://dummyimage.com/600x400/000/fff" alt="">
-                    <img src="https://dummyimage.com/600x400/000/fff" alt="">
-                    <img src="https://dummyimage.com/600x400/000/fff" alt="">
-                    <img src="https://dummyimage.com/600x400/000/fff" alt="">
-                    <img src="https://dummyimage.com/600x400/000/fff" alt="">
-                    <img src="https://dummyimage.com/600x400/000/fff" alt="">
-                    <img src="https://dummyimage.com/600x400/000/fff" alt="">
-                  </div>
-            </div>
-        </div>
-        <!-- Carousel End -->
-
-
-         <!-- Team Start -->
-        <div class="container-fluid pt-5">
-        <div class="container">
-            <div class="text-center pb-2">
-                <p class="section-title px-5"><span class="px-2">Our Teachers</span></p>
-                <h1 class="mb-4">Meet Our Team</h1>
-            </div>
-            <div class="row" style="flex-direction: column;">
-                <div>
-                    <div class="teacher">
-                        <div class="teacher__img">
-                            <img src="img/anjali.jpeg"  alt="" >
-                            <i>Anjali Pandey</i>
-                            <i>Director</i>
-                        </div>
-                        <div class="teacher__info">
-                            <p>
-                                Co-founder of Himalayan Education Initiatives. A postgraduate in Development Studies from the Central University of South Bihar and an esteemed alumnus of the prestigious "Gandhi Fellowship," Anjali brings over 7 years of expertise in content design, capacity building, facilitation, strategic planning, and program management. As a former consultant in the Aspirational District project of Niti Ayog Jharkhand, she has left an indelible mark in the field of education and community development.
-                            </p>
-                            <div class="text-center">
-                                <p class="section-title px-5"><span class=""></span></p>
-                            </div>
                         </div>
                     </div>
                 </div>
-                <div>
-                    <div class="teacher odd">
-                        <div class="teacher__info">
-                            An inspiring educator with a Postgraduate degree in Botany and a B.ed. With over 7 years of teaching experience, Ruchi stands out for her exceptional leadership qualities. Passionate about parental involvement in education, she focuses on enlightening parents about their child's learning journey. Specializing in library-based learning, Ruchi thrives on innovation, making education an exciting adventure for her students.
+                <div class="col-lg-4 col-md-6 pb-1">
+                    <div class="d-flex h-full bg-light shadow-sm border-top rounded " style="padding: 20px 30px;">
+                        <i class="flaticon-030-crayons h1 font-weight-normal text-primary mb-3"></i>
+                        <div class="pl-4">
+                            <h4>Arts and Crafts</h4>
+                            <p class="m-0">Inspiring creativity through various artistic activities ...</p>
                         </div>
-                        <div class="teacher__img">
-                            <img src="img/ruchi.jpeg"  alt="" >
-                            <i>Ruchi Chamoli</i>
-                            <i>Principal</i>
-                        </div>
-                    </div>
-                    <div class="text-center pb-2">
-                        <p class="section-title px-5"><span class=""></span></p>
                     </div>
                 </div>
-                <div>
-                    <div class="teacher">
-                        <div class="teacher__img">
-                            <img src="img/jaya.jpeg"  alt="" >
-                            <i>Jaya Pant</i>
-                            <i>Teacher</i>
-                        </div>
-                        <div class="teacher__info">
-                            A dynamic educator with a passion for shaping young minds. Armed with a graduate degree in Dl.ed and a diploma in Electronic Engineering, Jaya boasts over 20 years of teaching experience. Known for effortlessly forging connections with students, she creates an environment where learners feel comfortable sharing their thoughts. Jaya's expertise lies in the realms of Mathematics and Science. Beyond the classroom, she finds joy in playing games and immersing herself in the world of music, adding a harmonious touch to her vibrant teaching persona.
+                <div class="col-lg-4 col-md-6 pb-1">
+                    <div class="d-flex h-full bg-light shadow-sm border-top rounded " style="padding: 20px 30px;">
+                        <img src="/img/smart.svg" style="height: 2.5rem;width: auto;" alt="">
+                        <div class="pl-4">
+                            <h4>Smart Classroom</h4>
+                            <p class="m-0">Immersive education in tech-enhanced, futuristic smart classrooms ...</p>
+
                         </div>
                     </div>
-                    <div class="text-center pb-2">
-                        <p class="section-title px-5"><span class=""></span></p>
+                </div>
+                <div class="col-lg-4 col-md-6 pb-1">
+                    <div class="d-flex h-full bg-light shadow-sm border-top rounded " style="padding: 20px 30px;">
+                        <img src="/img/cctv.svg" style="height: 2rem;width: auto;" alt="">
+                        <!-- <i class="flaticon-025-sandwich h1 font-weight-normal text-primary mb-3"></i> -->
+                        <div class="pl-4">
+                            <h4>CCTV Enabled Campus</h4>
+                            <p class="m-0">State-of-the-art CCTV surveillance for enhanced security ...</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 pb-1">
+                    <div class="d-flex h-full bg-light shadow-sm border-top rounded " style="padding: 20px 30px;">
+                        <i class="flaticon-047-backpack h1 font-weight-normal text-primary mb-3"></i>
+                        <div class="pl-4">
+                            <h4>Experiential Learning</h4>
+                            <p class="m-0">Exciting journeys complementing classroom learning ...</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-        <!-- Team End -->
+    <!-- Facilities Start -->
 
 
-        <!-- Testimonial Start -->
-        <!-- <div class="container-fluid py-5">
+    <!-- About Start -->
+    <div class="container-fluid py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-5">
+                    <img class="img-fluid rounded mb-5 mb-lg-0" src="img/about-1.jpg" alt="">
+                </div>
+                <div class="col-lg-7">
+                    <p class="section-title pr-5"><span class="pr-2">Learn About Us</span></p>
+                    <h1 class="mb-4">Best School For Your Kids</h1>
+                    <p>At Aspen Academy, our vision is to nurture resilient and adaptable leaders who will shape the
+                        future with their critical thinking, creativity, and compassion, through an education rooted
+                        in 21st century skills and experiential learning.
+                    </p>
+                    <div class="row pt-2 pb-4">
+                        <div class="col-6 col-md-4">
+                            <img class="img-fluid rounded" src="img/about-2.jpg" alt="">
+                        </div>
+                        <div class="col-6 col-md-8">
+                            <ul class="list-inline m-0">
+                                <li class="py-2 border-top border-bottom">
+                                    <i class="fa fa-check text-primary mr-3"></i>Language skills
+                                </li>
+                                <li class="py-2 border-bottom">
+                                    <i class="fa fa-check text-primary mr-3"></i>Fine motor skills
+                                </li>
+                                <li class="py-2 border-bottom">
+                                    <i class="fa fa-check text-primary mr-3"></i>Social skills
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <a href="" class="btn btn-primary mt-2 py-2 px-4">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+
+
+
+    <!-- Carousel Start -->
+    <div class="container-fluid py-5">
+        <div class="container">
+            <div class="owl-carousel">
+                <img src="https://dummyimage.com/600x400/000/fff" alt="">
+                <img src="https://dummyimage.com/600x400/000/fff" alt="">
+                <img src="https://dummyimage.com/600x400/000/fff" alt="">
+                <img src="https://dummyimage.com/600x400/000/fff" alt="">
+                <img src="https://dummyimage.com/600x400/000/fff" alt="">
+                <img src="https://dummyimage.com/600x400/000/fff" alt="">
+                <img src="https://dummyimage.com/600x400/000/fff" alt="">
+            </div>
+        </div>
+    </div>
+    <!-- Carousel End -->
+
+
+
+    <!-- Testimonial Start -->
+    <!-- <div class="container-fluid py-5">
         <div class="container p-0">
             <div class="text-center pb-2">
                 <p class="section-title px-5"><span class="px-2">Testimonial</span></p>
@@ -297,11 +241,11 @@
             </div>
         </div>
     </div> -->
-        <!-- Testimonial End -->
+    <!-- Testimonial End -->
 
 
-        <!-- Blog Start -->
-        <!-- <div class="container-fluid pt-5">
+    <!-- Blog Start -->
+    <!-- <div class="container-fluid pt-5">
         <div class="container">
             <div class="text-center pb-2">
                 <p class="section-title px-5"><span class="px-2">Latest Blog</span></p>
@@ -356,15 +300,15 @@
             </div>
         </div>
     </div> -->
-        <!-- Blog End -->
+    <!-- Blog End -->
 
 
-        <!-- Back to Top -->
-        <a href="#" class="btn btn-primary p-3 back-to-top"><i class="fa fa-angle-double-up"></i></a>
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-primary p-3 back-to-top"><i class="fa fa-angle-double-up"></i></a>
 
-        <!-- Footer Start -->
-        <%- include('../partials/footer')%>
-        <!-- Footer End -->
+    <!-- Footer Start -->
+    <%- include('../partials/footer')%>
+    <!-- Footer End -->
 
 
 </body>
