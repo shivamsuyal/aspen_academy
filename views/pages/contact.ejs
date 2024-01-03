@@ -3,7 +3,13 @@
 
 <head>
     <%- include('../partials/htmlHeader')%>
-
+    <style>
+        .google-maps {
+            margin-bottom: 2rem;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+    </style>
 </head>
 
 <body>
@@ -62,12 +68,12 @@
                     </div>
                 </div>
                 <div class="col-lg-5 mb-5">
-                    <p>Labore sea amet kasd diam justo amet ut vero justo. Ipsum ut et kasd duo sit, ipsum sea et erat est dolore, magna ipsum et magna elitr. Accusam accusam lorem magna, eos et sed eirmod dolor est eirmod eirmod amet.</p>
+                    <p>For any inquiries, feedback, or information, please utilize our user-friendly Contact Us form. We value your input and look forward to hearing from you.                    </p>
                     <div class="d-flex">
-                        <i class="fa fa-map-marker-alt d-inline-flex align-items-center justify-content-center bg-primary text-secondary rounded-circle" style="width: 45px; height: 45px;"></i>
+                        <i class="fa fa-map-marker-alt d-inline-flex align-items-center justify-content-center bg-primary text-secondary rounded-circle" style="width: 60px; height: 45px;"></i>
                         <div class="pl-3">
                             <h5>Address</h5>
-                            <p>123 Street, New York, USA</p>
+                            <p>Aspen Academy, Rajeshwari Colony, Kargi Road, Banjarawala, Dehradun</p>
                         </div>
                     </div>
                     <div class="d-flex">
@@ -77,22 +83,25 @@
                             <p>info@example.com</p>
                         </div>
                     </div>
-                    <div class="d-flex">
+                    <a href="tel:+916396543425" style="text-decoration: none;" class="d-flex">
                         <i class="fa fa-phone-alt d-inline-flex align-items-center justify-content-center bg-primary text-secondary rounded-circle" style="width: 45px; height: 45px;"></i>
                         <div class="pl-3">
                             <h5>Phone</h5>
-                            <p>+012 345 67890</p>
+                            <p>+91-6396543425</p>
                         </div>
-                    </div>
-                    <div class="d-flex">
+                    </a>
+                    <!-- <div class="d-flex">
                         <i class="far fa-clock d-inline-flex align-items-center justify-content-center bg-primary text-secondary rounded-circle" style="width: 45px; height: 45px;"></i>
                         <div class="pl-3">
                             <h5>Opening Hours</h5>
                             <strong>Sunday - Friday:</strong>
                             <p class="m-0">08:00 AM - 05:00 PM </p>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
+            </div>
+            <div class="google-maps">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3445.650888310544!2d78.02603617457986!3d30.275526807586896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390929d7f713f469%3A0x5fcc219ddc5da7f1!2sAspen%20Academy!5e0!3m2!1sen!2sin!4v1704309128644!5m2!1sen!2sin" width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
     </div>
@@ -107,22 +116,6 @@
 
     <!-- Back to Top -->
     <a href="#" class="btn btn-primary p-3 back-to-top"><i class="fa fa-angle-double-up"></i></a>
-
-
-    <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="lib/isotope/isotope.pkgd.min.js"></script>
-    <script src="lib/lightbox/js/lightbox.min.js"></script>
-
-    <!-- Contact Javascript File -->
-    <script src="mail/jqBootstrapValidation.min.js"></script>
-    <script src="mail/contact.js"></script>
-
-    <!-- Template Javascript -->
-    <script src="js/main.js"></script>
 </body>
 
 </html>
