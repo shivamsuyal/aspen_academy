@@ -3,8 +3,8 @@
 
 $primary: #17a2b8;
 $secondary: #00394f;
-// $primary: #008ebd;
-// $secondary: #00858A;
+// $primary: #007E72;
+// $secondary: #2F4858;
 // $primary: #9abd63;
 // $secondary: #056739;
 
@@ -41,7 +41,9 @@ $btn-border-radius: 30px;
     text-transform: uppercase;
     color: $primary;
 }
-
+.h-full{
+    height: 100%;
+}
 .section-title span {
     position: relative;
     background: #ffffff;
