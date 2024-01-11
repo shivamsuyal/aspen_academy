@@ -1,0 +1,44 @@
+#logo__wapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+#logo{
+    height: 3rem;
+    width: auto;
+}
+#logo__wapper span{
+    font-family: 'DM Serif Display', serif;
+}
+
+.subNavMenu_wapper{
+    position: relative;
+    .subNavMenu{
+        position: absolute;
+        // display: flex;
+        display: none;
+        left: -1rem;
+        justify-content: center;
+        row-gap: 0.3rem;
+        padding: 0 1rem;
+        padding-bottom: 0.5rem;
+        align-items: center;
+        flex-direction: column;
+        border-radius: 0 0 5px 5px;
+        z-index: 10000;
+        a{
+            color: #00394f;
+            white-space: pre;
+            text-decoration: none;
+            &:hover{
+                color: #17A2B8;
+            }
+        }
+    }
+    &:hover{
+        .subNavMenu{
+            display: flex;
+        }
+    }
+}

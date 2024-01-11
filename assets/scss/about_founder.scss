@@ -1,0 +1,17 @@
+#director_img__wapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    transform: translateY(-50%);
+    #director_img{
+        // background: rgb(12,192,223);
+background: linear-gradient(90deg, rgba(12,192,223,1) 0%, rgb(165, 239, 252) 100%);
+        $size: 10rem;
+        width: $size;
+        border-radius: 50%;
+        display: block;
+    }
+}

@@ -6,8 +6,11 @@ mainRouter.get('/',(req,res)=>{
     res.render("pages/index")
 })
 
-mainRouter.get('/about',(req,res)=>{
-    res.render("pages/about")
+mainRouter.get('/about_vision',(req,res)=>{
+    res.render("pages/about_vision")
+})
+mainRouter.get('/about_founder',(req,res)=>{
+    res.render("pages/about_founder")
 })
 mainRouter.get('/class',(req,res)=>{
     res.render("pages/class")

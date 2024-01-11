@@ -1,18 +1,4 @@
-<style>
-    #logo__wapper{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 1rem;
-    }
-    #logo{
-        height: 3rem;
-        width: auto;
-    }
-    #logo__wapper span{
-        font-family: 'DM Serif Display', serif;
-    }
-</style>
+<link rel="stylesheet" href="/css/navbar.css">
 <div class="container-fluid bg-light position-relative shadow">
     <nav class="navbar navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-0 px-lg-5">
         <a id="logo__wapper" href="/" class="navbar-brand font-weight-bold text-secondary" style="font-size: 50px;">
@@ -25,7 +11,15 @@
         <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
             <div class="navbar-nav font-weight-bold ml-auto py-0 pr-4">
                 <a href="/" class="nav-item nav-link">Home</a>
-                <a href="/about" class="nav-item nav-link">About</a>
+                <div class="subNavMenu_wapper">
+                    <a href="#" class="subNavMenu_wapper_mainLink nav-item nav-link">About</a>
+                    <div class="subNavMenu bg-light">
+                        <a href="/about_vision">Vision</a>
+                        <a href="/about_founder">Director's Desk</a>
+                        <a href="#">Hello</a>
+                        <a href="#">Hello</a>
+                    </div>
+                </div>
                 <!-- <a href="/class" class="nav-item nav-link">Classes</a> -->
                 <a href="/team" class="nav-item nav-link">Teachers</a>
                 <a href="/gallery" class="nav-item nav-link">Gallery</a>
