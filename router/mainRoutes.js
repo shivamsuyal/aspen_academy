@@ -12,6 +12,9 @@ mainRouter.get('/about_vision',(req,res)=>{
 mainRouter.get('/about_founder',(req,res)=>{
     res.render("pages/about_founder")
 })
+mainRouter.get('/about_principal',(req,res)=>{
+    res.render("pages/about_principal")
+})
 mainRouter.get('/class',(req,res)=>{
     res.render("pages/class")
 })
