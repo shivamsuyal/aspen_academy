@@ -4,6 +4,24 @@
 <head>
     <%- include('../partials/htmlHeader')%>
     <link rel="stylesheet" href="/css/about.css">
+    <style>
+        .section-title{
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        .section-title::before {
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        #about_text p{
+            text-align: center;
+        }
+        #aspen_leaf{
+            height: 10rem;
+            width: auto;
+            margin: 0 auto;
+        }
+    </style>
 </head>
 
 <body>
@@ -19,7 +37,7 @@
             <h3 class="display-3 font-weight-bold text-white">About Us</h3>
             <div class="d-inline-flex text-white">
                 <!-- <img src="/img/leaves.png" id="leaves" alt=""> -->
-                <p class="m-0"><a class="text-white" href="">Home</a></p>
+                <p class="m-0"><a class="text-white" href="/">Home</a></p>
                 <p class="m-0 px-2">/</p>
                 <p class="m-0">About Us</p>
             </div>
@@ -31,52 +49,36 @@
         <div class="container-fluid pt-5">
             <div class="container">
                 <div class="text-center pb-2">
+                    <p class="section-title px-5"><span class="px-2">Why Aspen</span></p>
+                    <div id="about_text">
+                        <p>
+                            Aspen Academy takes its name from the aspen leaf, known for its <b>Resilience</b> and <b>Ability</b> to <b>Adapt</b> to changing environments.
+                        </p>
+                        <div style="width: 100%; display: flex; justify-content: center; align-items: center;">
+                            <img id="aspen_leaf" src="/img/aspen_leaf.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container mt-2">
+                <div class="text-center pb-2">
                     <p class="section-title px-5"><span class="px-2">Vision</span></p>
                     <div id="about_text">
                         <p>
-                            At Aspen Academy, our paramount mission is to empower students to evolve into responsible global citizens. We are dedicated to  <b> nurturing their intellectual</b>, <b>physical</b>, <b>moral</b>, and <b>spiritual growth</b> through a comprehensive educational approach. 
+                            At Aspen Academy, our vision is to nurture resilient and adaptable leaders who will shape the future with their critical thinking, creativity, and compassion, through an education rooted in 21st century skills and experiential learning.
+ 
                         </p>
-                        <p>
-                            Our commitment extends beyond traditional academics; we strive to equip students with essential <b>21st-century skills</b> that transcend classroom boundaries. Through a curriculum that integrates real-world experiences, we aim to bridge the gap between theoretical knowledge and practical application. By providing a dynamic learning environment that encourages critical thinking, collaboration, and innovation, we prepare our students to face the challenges of an ever-changing world.
-                        </p>
-                        <p>
-                            Our holistic approach is designed not only to foster academic excellence but also to instill a sense of ethical responsibility and global awareness. We believe that through this <b>holistic education</b>, our students will emerge as well-rounded individuals ready to make a positive and meaningful impact on the world around them.
-                        </p>
+                        
                     </div>
                 </div>
+            </div>
+            <div class="container mt-2">
                 <div class="text-center pb-2">
-                    <h1 class="mb-4">Classes for Your Kids</h1>
-                </div>
-                <div class="row">
-                    <div class="col-lg-4 mb-5">
-                        <div class="card border-0 bg-light shadow-sm pb-2">
-                            <img class="card-img-top mb-2" src="img/class-1.jpg" alt="">
-                            <div class="card-body text-center">
-                                <h4 class="card-title">Generate Creativity</h4>
-                                <p class="card-text">Fostering creativity is key for innovation. Through open-ended assignments and flexible learning, education cultivates a mindset valuing diverse perspectives and effective problem-solving.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 mb-5">
-                        <div class="card border-0 bg-light shadow-sm pb-2">
-                            <img class="card-img-top mb-2" src="img/class-2.jpg" alt="">
-                            <div class="card-body text-center">
-                                <h4 class="card-title">Build Confidence</h4>
-                                <p class="card-text">Encouraging self-expression and acknowledging accomplishments, schools play a pivotal role in nurturing students' confidence, preparing them for future endeavors.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 mb-5">
-                        <div class="card border-0 bg-light shadow-sm pb-2">
-                            <img class="card-img-top mb-2" src="img/class-3.jpg" alt="">
-                            <div class="card-body text-center">
-                                <h4 class="card-title">Physical Education</h4>
-                                <p class="card-text">Physical Education (PE) is crucial for holistic student development. PE not only promotes physical fitness but also instills teamwork, discipline, and lifelong healthy habits.
-                                </p>
-                            </div>
-                        </div>
+                    <p class="section-title px-5"><span class="px-2">Mission</span></p>
+                    <div id="about_text">
+                        <p>
+                            Aspen Academy is to empower our students to become responsible global citizens, by fostering their intellectual, physical, moral, and spiritual growth through a holistic education that integrates 21st century skills, real-world experiences, thus equipping them to make a positive impact on the world.
+                        </p>
                     </div>
                 </div>
             </div>
