@@ -14,3 +14,28 @@
         display: block;
     }
 }
+
+@media only screen and (max-width: 381px) {
+    .section-title span{
+        font-size: 1.5rem;
+    }
+    
+    #about #about_text {
+        padding: 1rem 0;
+
+        p{
+            font-size: 1rem;
+        }
+    }
+}
+@media only screen and (max-width: 360px) {
+    .section-title span{
+        font-size: 1.3rem;
+    }
+    #about #about_text {
+        padding: 1rem 0;
+        p{
+            font-size: 0.9rem;
+        }
+    }
+}

@@ -8,3 +8,15 @@
     }
 }
 
+.section-title span::before {
+  display: none;
+  // position: absolute;
+  // content: "";
+  // top: 50%;
+  // transform: translateY(-50%) translateX(100%);
+  // // top: 10px;
+  // right: 0;
+  // width: 40px;
+  // height: 2px;
+  // background: $primary;
+}

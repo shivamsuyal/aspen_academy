@@ -14,6 +14,7 @@
     left: 50%;
     height: 3px;
     width: 10%;
+    min-width: 100px;
     border-radius: 99px;
     transform: translateX(-50%);
   }
@@ -56,6 +57,25 @@
   }
 }
 
+
+.teacher__img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  // position: absolute;
+  // top: 0;
+  // transform: translateY(-50%);
+  img{
+      background: linear-gradient(90deg, #4AD0E6 0%, #CAEFF8 100%);
+      $size: 10rem;
+      width: $size;
+      border-radius: 50%;
+      display: block;
+  }
+}
+
+
 @media only screen and (max-width: 700px) {
   .teacher {
     flex-direction: column;
@@ -69,3 +89,13 @@
     }
   }
 }
+
+
+
+@media only screen and (max-width: 500px) {
+  .teacher{
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+  }
+}
+
