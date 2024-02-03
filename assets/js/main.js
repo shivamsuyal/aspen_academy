@@ -56,7 +56,7 @@
         autoplayTimeout:4000,
         autoplayHoverPause:true,
         lazyLoad: true,
-        // autoHeight: true,
+        // autoWidth: true,
     });
     
 })(jQuery);
