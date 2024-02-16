@@ -27,6 +27,9 @@ mainRouter.get('/gallery',(req,res)=>{
 mainRouter.get('/blog',(req,res)=>{
     res.render("pages/blog")
 })
+mainRouter.get('/careers',(req,res)=>{
+    res.render("pages/careers")
+})
 mainRouter.get('/single',(req,res)=>{
     res.render("pages/single")
 })
