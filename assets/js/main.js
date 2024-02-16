@@ -53,8 +53,8 @@
         loop:true,
         margin:10,
         autoplay:true,
-        autoplayTimeout:4000,
-        autoplayHoverPause:true,
+        autoplayTimeout:2000,
+        // autoplayHoverPause:true,
         lazyLoad: true,
         // autoWidth: true,
     });
