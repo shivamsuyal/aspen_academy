@@ -1,1 +1,1 @@
-#hero__text{font-size:1.1rem}.owl-carousel img{border-radius:5px}.section-title span::before{display:none}
+#hero__text{font-size:1.1rem}.owl-carousel img{position:relative;border-radius:5px}.owl-carousel img::after{content:"";position:absolute;height:100%;width:100%;inset:0;background-image:url("img/frame.png")}.section-title span::before{display:none}
