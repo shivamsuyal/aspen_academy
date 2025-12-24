@@ -1,0 +1,94 @@
+<style>
+  .backdrop::before{
+    position: absolute;
+    content: '';
+    height: 100%;
+    width: 15px;
+    background-color: #fa8b27;
+    top: 40%;
+    left: 0px;
+  }
+  
+  .pimg{
+    background-image: url("/public/img/polaroid-border.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 0.8rem;
+    background-origin: border-box;
+  }
+</style>
+
+<section class="relative min-h-[100vh] flex py-4 px-8">
+  
+  <!-- Left Content -->
+  <div class="flex-1 basis-3/5 space-y-6">
+    <div class="text-5xl md:text-6xl font-bold text-gray-900 leading-tight heading-font flex flex-col">
+      <div class="bg-[#f9ab85] flex justify-start items-end h-40 relative backdrop">
+        <span class="pl-8 paramount-title-1">EDUCATION IS</span>
+      </div>
+      <span class="pl-8 pt-1 paramount-title-2">PARAMOUNT</span>
+    </div>
+    
+    <div class="pl-8 space-y-6">
+      <p class="text-gray-600 text-lg max-w-md paramount-text">
+        Lorem impus yhun arte yhunw tyeub un aunt loreiu
+        tyunit aynuet yhber tyyv uni untre tyin nctg unst
+        rem impus yhun arte yhunw tyeub un aunt loreiu
+        tyunit aynuet yhber tyyv uni untre
+      </p>
+
+      <div class="paramount-subheading">
+        <h3 class="text-2xl font-bold text-gray-800">GOOD EDUCATION IS ESSENTIAL</h3>
+        <p class="text-orange-500 font-semibold">SCHOOL PERIOD 2025 - 2026</p>
+      </div>
+
+      <button
+        class="paramount-btn bg-teal-500 hover:bg-teal-600 text-white px-8 py-4 rounded text-sm font-semibold uppercase tracking-wider transition-all duration-300">
+        Read More
+      </button>
+      
+    </div>  
+  </div>
+  
+  <!-- Right Side - Polaroid Stack (Diagonal Arrangement) -->
+  <div class="basis-2/5 flex justify-center items-center">
+    <div class="polaroid-stack-container relative h-[550px] w-[450px]">
+      
+      <!-- Decorative Elements -->
+      <!-- Orange Star -->
+      <svg class="absolute -top-8 right-12 w-16 h-16 text-orange-400 star-decoration z-50" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+      </svg>
+      
+      <!-- Teal Arch -->
+      <svg class="absolute -bottom-4 -left-8 w-20 h-20 text-teal-400 arch-decoration" viewBox="0 0 100 100">
+        <path d="M20,80 Q20,20 50,20 T80,80" stroke="currentColor" stroke-width="12" fill="none" stroke-linecap="round"/>
+      </svg>
+      
+      <!-- Teal Background Block (Top-left) -->
+      <div class="teal-box absolute top-8 left-0 h-[200px] w-[200px] bg-[#148d84] rounded-lg shadow-xl" style="transform: rotate(-15deg);"></div>
+      
+      <!-- Polaroid Card 1 - Top Left (Smallest) -->
+      <div class="polaroid-card polaroid-1 absolute top-4 left-4 z-30" style="transform: rotate(8deg);">
+        <img src="/public/img/hero-1.png" class="h-[200px] w-[200px] object-cover pimg rounded" alt="Student 1">
+      </div>
+      
+      <!-- Polaroid Card 2 - Middle Right (Medium) -->
+      <div class="polaroid-card polaroid-2 absolute top-24 -right-8 z-20" style="transform: rotate(-5deg);">
+        <img src="/public/img/hero-2.png" class="h-[200px] w-[200px] object-cover pimg rounded" alt="Student 2">
+      </div>
+      
+      <!-- Polaroid Card 3 - Bottom Center (Largest) -->
+      <div class="polaroid-card polaroid-3 absolute bottom-4 left-20 z-10" style="transform: rotate(12deg);">
+        <img src="/public/img/hero-1.png" class="h-[200px] w-[200px] object-cover pimg rounded" alt="Student 3">
+      </div>
+      
+      <!-- Teal Background Block (Bottom-right) -->
+      <div class="teal-box-2 absolute bottom-12 right-0 h-[160px] w-[140px] bg-[#148d84] rounded-lg shadow-xl" style="transform: rotate(8deg);"></div>
+      
+    </div>
+  </div>
+</section>
+
+<script src="/public/js/hero2.js"></script>
+

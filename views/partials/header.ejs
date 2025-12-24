@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        <%= title %>
+    </title>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"> -->
+    <link rel="stylesheet" href="/public/css/main.css" />
+</head>
+
+<body class="bg-gray-50">
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex items-center justify-between h-20">
+
+                <!-- Logo -->
+                <div class="flex items-center gap-3">
+                    <img src="/public/img/image.png" class="h-10 w-auto" alt="">
+                    <span class="font-semibold text-lg tracking-wide text-gray-800">
+                        Aspen Academy
+                    </span>
+                </div>
+
+                <!-- Desktop Menu -->
+                <ul class="hidden md:flex items-center gap-12 text-xs uppercase tracking-widest text-gray-600">
+                    <li class="hover:text-gray-900 cursor-pointer">Home</li>
+
+                    <!-- About Dropdown -->
+                    <li class="relative group cursor-pointer">
+                        <span class="hover:text-gray-900">About</span>
+
+                        <ul class="absolute left-0 top-full mt-6 w-56 bg-white shadow-lg rounded-md opacity-0 invisible
+                   group-hover:opacity-100 group-hover:visible transition-all duration-200">
+                            <li class="px-4 py-3 hover:bg-gray-100">Vision</li>
+                            <li class="px-4 py-3 hover:bg-gray-100">Director's Desk</li>
+                            <li class="px-4 py-3 hover:bg-gray-100">Principal's Desk</li>
+                            <li class="px-4 py-3 hover:bg-gray-100">Team</li>
+                        </ul>
+                    </li>
+
+                    <li class="hover:text-gray-900 cursor-pointer">Gallery</li>
+                    <li class="hover:text-gray-900 cursor-pointer">Careers</li>
+                </ul>
+
+                <!-- CTA Button -->
+                <div class="hidden md:block">
+                    <a href="#" class="bg-green-200 text-green-900 px-6 py-2 text-xs uppercase tracking-widest
+                 hover:bg-green-300 transition">
+                        Admission
+                    </a>
+                </div>
+
+                <!-- Mobile Button -->
+                <button id="menuBtn" class="md:hidden text-2xl text-gray-700">
+                    ☰
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="hidden md:hidden bg-white border-t">
+            <ul class="flex flex-col text-xs uppercase tracking-widest text-gray-700">
+                <li class="px-6 py-4 hover:bg-gray-100">Home</li>
+
+                <li class="px-6 py-4">
+                    About
+                    <ul class="mt-3 ml-4 normal-case tracking-normal text-sm text-gray-600">
+                        <li class="py-1">Vision</li>
+                        <li class="py-1">Director's Desk</li>
+                        <li class="py-1">Principal's Desk</li>
+                        <li class="py-1">Team</li>
+                    </ul>
+                </li>
+
+                <li class="px-6 py-4 hover:bg-gray-100">Gallery</li>
+                <li class="px-6 py-4 hover:bg-gray-100">Careers</li>
+
+                <li class="px-6 py-4">
+                    <a href="#" class="inline-block bg-green-200 text-green-900 px-5 py-2 text-xs tracking-widest">
+                        Admission
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <script>
+        const menuBtn = document.getElementById("menuBtn");
+        const mobileMenu = document.getElementById("mobileMenu");
+
+        menuBtn.addEventListener("click", () => {
+            mobileMenu.classList.toggle("hidden");
+        });
+    </script>
+
+
+</body>
+
+</html>

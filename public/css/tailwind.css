@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Blinker:wght@100;200;300;400;600;700;800;900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Special+Elite&family=Varela+Round&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+*{
+    font-family: inherit;
+    box-sizing: border-box;
+}
+
+html,body {
+    font-family: "Nunito Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.code-font {
+    font-family: "Blinker", sans-serif;
+}
+
+.heading-font {
+    font-family: 'Special Elite', serif;
+    letter-spacing: 5px;
+}
+/* 
+.search-input:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(99, 179, 162, 0.2);
+} */

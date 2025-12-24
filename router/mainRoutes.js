@@ -3,7 +3,17 @@ import { Router } from "express";
 const mainRouter = Router()
 
 mainRouter.get('/',(req,res)=>{
-    res.render("pages/index")
+    res.render("pages/index",{ 
+    title: 'Home - Aspen Academy',
+    page: 'home'
+  })
+})
+
+mainRouter.get('/hero3',(req,res)=>{
+    res.render("pages/hero3",{ 
+    title: 'Home - Aspen Academy',
+    page: 'home'
+  })
 })
 
 mainRouter.get('/about_vision',(req,res)=>{
