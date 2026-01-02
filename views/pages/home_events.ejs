@@ -1,139 +1,96 @@
-<!-- Events Section - Grid Pattern: 4 cols, 5 rows, gap: 8px -->
-<section class="events-section relative min-h-screen bg-gradient-to-br from-green-500 via-green-600 to-teal-600 py-20 px-8 overflow-hidden">
+<!-- Events Section - Responsive Grid Pattern -->
+<section class="events-section relative min-h-screen bg-gradient-to-br from-[#16a1b6] to-[#006d81] py-12 md:py-20 px-4 sm:px-6 md:px-8 overflow-hidden">
   
   <!-- Center Text (Initially Visible) -->
-  <div class="events-text-container absolute inset-0 flex items-center justify-center z-20">
-    <div class="text-center space-y-6 events-text-content">
+  <div class="events-text-container absolute inset-0 flex items-center justify-center z-20 px-4">
+    <div class="text-center space-y-4 md:space-y-6 events-text-content">
       <div class="inline-block">
-        <h2 class="text-6xl md:text-7xl lg:text-8xl font-bold text-white mb-4 events-title">
+        <h2 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold text-white mb-3 md:mb-4 events-title leading-tight">
           OUR EVENTS
         </h2>
-        <div class="h-2 bg-orange-400 rounded-full events-underline mx-auto" style="width: 0%;"></div>
+        <div class="h-1.5 md:h-2 bg-green-400 rounded-full events-underline mx-auto" style="width: 0%;"></div>
       </div>
       
-      <p class="text-xl md:text-2xl text-green-100 max-w-2xl mx-auto events-subtitle">
+      <p class="text-lg sm:text-xl md:text-2xl text-white max-w-2xl mx-auto events-subtitle">
         Capturing Moments, Creating Memories
       </p>
       
-      <p class="text-lg text-green-200 max-w-xl mx-auto events-description">
+      <p class="text-sm sm:text-base md:text-lg text-white max-w-xl mx-auto events-description px-4">
         Explore our vibrant collection of school events, activities, and celebrations that make learning an adventure.
       </p>
     </div>
   </div>
   
-  <!-- Photo Grid - Following Exact Layout Pattern -->
+  <!-- Photo Grid - Responsive Layout -->
   <div class="events-grid-container max-w-7xl mx-auto opacity-0">
     
     <!-- Grid Header -->
-    <div class="text-center mb-8 grid-header">
-      <h3 class="text-4xl md:text-5xl font-bold text-white mb-2 mt-4">Event Gallery</h3>
-      <p class="text-green-100 text-lg">2023 - 2024 School Year Highlights</p>
+    <div class="text-center mt-12 md:mt-0 mb-6 md:mb-8 grid-header">
+      <h3 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-2 mt-4">Event Gallery</h3>
+      <p class="text-green-100 text-sm sm:text-base md:text-lg">2023 - 2024 School Year Highlights</p>
     </div>
     
-    <!-- Grid: 4 columns, 5 rows, 8px gap -->
-    <div class="photo-grid grid grid-cols-4 gap-2 auto-rows-[200px]">
+    <!-- Grid: Responsive columns (1 → 2 → 4), adaptive gap -->
+    <div class="photo-grid grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2 md:gap-2 auto-rows-[150px] sm:auto-rows-[180px] md:auto-rows-[200px]">
       
-      <!-- Item 1: col-span-2, row-span-2 -->
-      <div class="grid-item col-span-2 row-span-2 relative overflow-hidden group">
+      <!-- Item 1: Large featured image -->
+      <div class="grid-item col-span-1 sm:col-span-2 lg:col-span-2 row-span-2 relative overflow-hidden rounded-lg shadow-lg group">
         <img src="/public/img/hero-1.png" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" alt="Event 1">
-        <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-          <div class="absolute bottom-4 left-4 text-white">
-            <h4 class="font-bold text-lg">Annual Day Celebration</h4>
-            <p class="text-sm text-gray-200">December 2022</p>
-          </div>
-        </div>
+        <div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
       </div>
       
-      <!-- Item 2: col-span-1, row-span-1 -->
-      <div class="grid-item col-span-1 row-span-1 relative overflow-hidden group">
+      <!-- Item 2 -->
+      <div class="grid-item col-span-1 row-span-1 relative overflow-hidden rounded-lg shadow-lg group">
         <img src="/public/img/hero-1.png" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" alt="Event 2">
-        <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-          <div class="absolute bottom-2 left-2 text-white">
-            <h4 class="font-bold text-sm">Sports Day</h4>
-          </div>
-        </div>
+        <div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
       </div>
       
-      <!-- Item 3: col-span-1, row-span-1 -->
-      <div class="grid-item col-span-1 row-span-1 relative overflow-hidden group">
+      <!-- Item 3 -->
+      <div class="grid-item col-span-1 row-span-1 relative overflow-hidden rounded-lg shadow-lg group">
         <img src="/public/img/hero-1.png" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" alt="Event 3">
-        <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-          <div class="absolute bottom-2 left-2 text-white">
-            <h4 class="font-bold text-sm">Science Fair</h4>
-          </div>
-        </div>
+        <div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
       </div>
       
-      <!-- Item 4: col-span-1, row-span-1 -->
-      <div class="grid-item col-span-1 row-span-1 relative overflow-hidden group">
+      <!-- Item 4 -->
+      <div class="grid-item col-span-1 row-span-1 relative overflow-hidden rounded-lg shadow-lg group">
         <img src="/public/img/hero-1.png" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" alt="Event 4">
-        <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-          <div class="absolute bottom-2 left-2 text-white">
-            <h4 class="font-bold text-sm">Art Exhibition</h4>
-          </div>
-        </div>
+        <div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
       </div>
       
-      <!-- Item 5: col-span-1, row-span-3 -->
-      <div class="grid-item col-span-1 row-span-3 relative overflow-hidden group">
+      <!-- Item 5: Tall portrait image -->
+      <div class="grid-item col-span-1 row-span-2 sm:row-span-3 relative overflow-hidden rounded-lg shadow-lg group">
         <img src="/public/img/hero-1.png" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" alt="Event 5">
-        <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-          <div class="absolute bottom-4 left-4 text-white">
-            <h4 class="font-bold">Cultural Festival</h4>
-            <p class="text-sm text-gray-200">November 2022</p>
-          </div>
-        </div>
+        <div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
       </div>
       
-      <!-- Item 6: col-span-1, row-span-1 -->
-      <div class="grid-item col-span-1 row-span-1 relative overflow-hidden group">
+      <!-- Item 6 -->
+      <div class="grid-item col-span-1 row-span-1 relative overflow-hidden rounded-lg shadow-lg group">
         <img src="/public/img/hero-1.png" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" alt="Event 6">
-        <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-          <div class="absolute bottom-2 left-2 text-white">
-            <h4 class="font-bold text-sm">Music Class</h4>
-          </div>
-        </div>
+        <div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
       </div>
       
-      <!-- Item 7: col-span-2, row-span-2 -->
-      <div class="grid-item col-span-2 row-span-2 relative overflow-hidden group">
+      <!-- Item 7: Large featured image -->
+      <div class="grid-item col-span-1 sm:col-span-2 lg:col-span-2 row-span-2 relative overflow-hidden rounded-lg shadow-lg group">
         <img src="/public/img/hero-1.png" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" alt="Event 7">
-        <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-          <div class="absolute bottom-4 left-4 text-white">
-            <h4 class="font-bold text-lg">Educational Field Trip</h4>
-            <p class="text-sm text-gray-200">February 2023</p>
-          </div>
-        </div>
+        <div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
       </div>
       
-      <!-- Item 8: col-span-1, row-span-1 -->
-      <div class="grid-item col-span-1 row-span-1 relative overflow-hidden group">
+      <!-- Item 8 -->
+      <div class="grid-item col-span-1 row-span-1 relative overflow-hidden rounded-lg shadow-lg group">
         <img src="/public/img/hero-1.png" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" alt="Event 8">
-        <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-          <div class="absolute bottom-2 left-2 text-white">
-            <h4 class="font-bold text-sm">Drama Club</h4>
-          </div>
-        </div>
+        <div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
       </div>
       
-      <!-- Item 9: col-span-1, row-span-1 -->
-      <div class="grid-item col-span-1 row-span-1 relative overflow-hidden group">
+      <!-- Item 9 -->
+      <div class="grid-item col-span-1 row-span-1 relative overflow-hidden rounded-lg shadow-lg group">
         <img src="/public/img/hero-1.png" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" alt="Event 9">
-        <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-          <div class="absolute bottom-2 left-2 text-white">
-            <h4 class="font-bold text-sm">Reading Club</h4>
-          </div>
-        </div>
+        <div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
       </div>
       
-      <!-- Item 10: col-span-1, row-span-1 -->
-      <div class="grid-item col-span-1 row-span-1 relative overflow-hidden group">
+      <!-- Item 10 -->
+      <div class="grid-item col-span-1 row-span-1 relative overflow-hidden rounded-lg shadow-lg group">
         <img src="/public/img/hero-1.png" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" alt="Event 10">
-        <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-          <div class="absolute bottom-2 left-2 text-white">
-            <h4 class="font-bold text-sm">Graduation Day</h4>
-          </div>
-        </div>
+        <div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
       </div>
       
     </div>
@@ -142,5 +99,3 @@
 </section>
 
 <script src="/public/js/events.js"></script>
-
-

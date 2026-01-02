@@ -37,45 +37,92 @@ document.addEventListener('DOMContentLoaded', function() {
       duration: 0.8
     }, '-=0.5');
 
-  // ========== TEXT TO GRID TRANSITION ==========
-  const transitionTl = gsap.timeline({
-    scrollTrigger: {
-      trigger: '.events-section',
-      start: 'top top',
-      end: '+=100%',
-      scrub: 1,
-      pin: true,
-      anticipatePin: 1,
-      markers: false
-    }
+  // ========== RESPONSIVE ANIMATIONS WITH matchMedia ==========
+  let mm = gsap.matchMedia();
+
+  // Desktop animations (768px and above)
+  mm.add("(min-width: 768px)", () => {
+    const transitionTl = gsap.timeline({
+      scrollTrigger: {
+        trigger: '.events-section',
+        start: 'top top',
+        end: '+=100%',
+        scrub: 1,
+        pin: true,
+        anticipatePin: 1,
+        markers: false
+      }
+    });
+
+    // Hide text
+    transitionTl
+      .to('.events-text-content', {
+        opacity: 0,
+        duration: 0.2,
+        ease: 'power2.in'
+      })
+      // Show grid container
+      .to('.events-grid-container', {
+        opacity: 1,
+        duration: 0.2,
+        ease: 'power2.out'
+      }, 0.2);
+
+    // Get all grid items and shuffle them for random order (desktop only)
+    const gridItems = gsap.utils.toArray('.grid-item');
+    const shuffledItems = gsap.utils.shuffle([...gridItems]);
+
+    // Animate each item appearing one by one as user scrolls
+    shuffledItems.forEach((item, index) => {
+      transitionTl.from(item, {
+        opacity: 0,
+        scale: 0.8,
+        duration: 0.3,
+        ease: 'power2.out'
+      }, index * 0.15);
+    });
   });
 
-  // Hide text
-  transitionTl
-    .to('.events-text-content', {
-      opacity: 0,
-      duration: 0.2,
-      ease: 'power2.in'
-    })
-    // Show grid container
-    .to('.events-grid-container', {
-      opacity: 1,
-      duration: 0.2,
-      ease: 'power2.out'
-    }, 0.2);
+  // Mobile animations (below 768px)
+  mm.add("(max-width: 767px)", () => {
+    const transitionTl = gsap.timeline({
+      scrollTrigger: {
+        trigger: '.events-section',
+        start: 'top top',
+        end: '+=100%',
+        scrub: 1,
+        pin: true,
+        anticipatePin: 1,
+        markers: false
+      }
+    });
 
-  // Get all grid items and shuffle them for random order
-  const gridItems = gsap.utils.toArray('.grid-item');
-  const shuffledItems = gsap.utils.shuffle([...gridItems]);
+    // Hide text
+    transitionTl
+      .to('.events-text-content', {
+        opacity: 0,
+        duration: 0.2,
+        ease: 'power2.in'
+      })
+      // Show grid container
+      .to('.events-grid-container', {
+        opacity: 1,
+        duration: 0.2,
+        ease: 'power2.out'
+      }, 0.2);
 
-  // Animate each item appearing one by one as user scrolls
-  shuffledItems.forEach((item, index) => {
-    transitionTl.from(item, {
-      opacity: 0,
-      scale: 0.8,
-      duration: 0.3,
-      ease: 'power2.out'
-    }, index * 0.15); // Stagger timing
+    // Get all grid items in their original order (no shuffle)
+    const gridItems = gsap.utils.toArray('.grid-item');
+
+    // Animate each item appearing one by one in order
+    gridItems.forEach((item, index) => {
+      transitionTl.from(item, {
+        opacity: 0,
+        y: 50,
+        duration: 0.3,
+        ease: 'power2.out'
+      }, index * 0.15);
+    });
   });
 
 });
