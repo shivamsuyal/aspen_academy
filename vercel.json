@@ -5,12 +5,7 @@
       { "src": "/public/**/*", "use": "@vercel/static" }
     ],
     "routes": [
-      { "src": "/css/(.*)", "dest": "/public/css/$1" },
-      { "src": "/img/(.*)", "dest": "/public/img/$1" },
-      { "src": "/js/(.*)", "dest": "/public/js/$1" },
-      { "src": "/lib/(.*)", "dest": "/public/lib/$1" },
-      { "src": "/mail/(.*)", "dest": "/public/mail/$1" },
+      { "handle": "filesystem" },
       { "src": "/(.*)", "dest": "/" }
     ]
 }
-  
