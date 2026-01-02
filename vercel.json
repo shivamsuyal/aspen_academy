@@ -2,14 +2,14 @@
     "version": 2,
     "builds": [
       { "src": "/index.js", "use": "@vercel/node" },
-      { "src": "/assets/**/*", "use": "@vercel/static" }
+      { "src": "/public/**/*", "use": "@vercel/static" }
     ],
     "routes": [
-      { "src": "/css/(.*)", "dest": "/assets/css/$1" },
-      { "src": "/img/(.*)", "dest": "/assets/img/$1" },
-      { "src": "/js/(.*)", "dest": "/assets/js/$1" },
-      { "src": "/lib/(.*)", "dest": "/assets/lib/$1" },
-      { "src": "/mail/(.*)", "dest": "/assets/mail/$1" },
+      { "src": "/css/(.*)", "dest": "/public/css/$1" },
+      { "src": "/img/(.*)", "dest": "/public/img/$1" },
+      { "src": "/js/(.*)", "dest": "/public/js/$1" },
+      { "src": "/lib/(.*)", "dest": "/public/lib/$1" },
+      { "src": "/mail/(.*)", "dest": "/public/mail/$1" },
       { "src": "/(.*)", "dest": "/" }
     ]
 }
